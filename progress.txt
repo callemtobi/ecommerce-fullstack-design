@@ -1,0 +1,26 @@
+--------- WEEK ONE -----------
+-> Day one: 
+    - Setting up the environment
+    - Installing the required npm packages
+    - Screen size analyzing [mobile, desktop]
+    - Navbar + Front page (59%)
+
+
+-> Day two:
+-> Day three:
+-> Day four:
+-> Day five:
+-> Day six:
+-> Day seven:
+
+
+
+
+
+--------- WEEK TWO -----------
+
+
+
+
+
+--------- WEEK THREE -----------
