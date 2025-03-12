@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../public/stylesheets/cart.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="main">
+        <!-- -----------------------------------Navigation---------------------------- -->
+        <div class="navigation">
+            <!-- Mobile -->
+            <div class="mobile-only mx-3 my-3">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="text-dark header-back me-3"><i class="fas fa-arrow-left"></i></a>
+                        <h5 class="mb-0">Shopping Cart</h5>
+                    </div>
+                    <div>
+                        <a href="#" class="text-dark me-3"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#" class="text-dark"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Desktop -->
+            <div class="desktop-only container py-4 desk-nav">
+                <div class="row py-2 align-items-center justify-content-between">
+                  <div class="col-md-3">
+                    <a href="#" class="text-decoration-none">
+                    <div class="d-flex align-items-center">
+                      <div class="bg-primary text-white rounded p-1 me-2">
+                      <i class="fas fa-cube"></i>
+                      </div>
+                      <span class="text-primary fw-bold">Brand</span>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="d-flex justify-content-end">
+                      <a href="#" class="text-decoration-none text-secondary mx-2 text-center">
+                        <i class="fas fa-user d-block mb-1"></i>
+                        <small>Profile</small>
+                      </a>
+                      <a href="#" class="text-decoration-none text-secondary mx-2 text-center">
+                          <i class="fas fa-envelope d-block mb-1"></i>
+                          <small>Message</small>
+                      </a>
+                      <a href="#" class="text-decoration-none text-secondary mx-2 text-center">
+                          <i class="fas fa-heart d-block mb-1"></i>
+                          <small>Orders</small>
+                      </a>
+                      <a href="#" class="text-decoration-none text-secondary mx-2 text-center">
+                          <i class="fas fa-shopping-cart d-block mb-1"></i>
+                          <small>My cart</small>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <!-- ----------------------------------- My Cart ---------------------------- -->
+        <h5 class="desktop-only container ps-4">My Cart (3)</h5>
+        <div class="my-cart mt-2 container p-3">
+            <!-- Cart Items -->
+            <div class="cart-items-container p-3">
+                <!--  -->
+                <div class="cart-item">
+                    <div class="inner align-items-center">
+                        <div class="">
+                        </div>
+                        <div class="cart-grid-custom border-bottom">
+                            <div class="d-flex pt-3">
+                                <div class="img-container mx-2">
+                                    <img src="../public/images/products/Untitled-4.png" height="70px" alt="T-shirt" class="item-image">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">T-shirts with multiple colors, for men and lady</h6>
+                                    <p class="text-muted small mb-0">Size: medium, Color: blue, Material: Plastic</p>
+                                    <p class="text-muted small mb-0">Seller: Artel Market</p>
+                                    <div class="d-flex my-3 desktop-only">
+                                        <button class="btn text-danger border me-2">Remove</button>
+                                        <button class="btn text-primary border me-2">Save for later</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-quantity px-2 mb-3">
+                                <div class="d-flex mt-2 input-group mobile-only w-50">
+                                    <button class="btn border">-</button>
+                                    <input type="text" class="form-control text-center" placeholder="2">
+                                    <button class="btn border">+</button>
+                                </div>
+                                <div class="">
+                                    <h6 class="">$78.99</h6>
+                                </div>
+                                <div class="d-flex align-items-center desktop-only">
+                                    <span class="me-2">Qty:</span>
+                                    <select class="form-select form-select-sm" style="width: 100px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option selected value="9">9</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="cart-item">
+                    <div class="inner align-items-center">
+                        <div class="">
+                        </div>
+                        <div class="cart-grid-custom border-bottom">
+                            <div class="d-flex pt-3">
+                                <div class="img-container mx-2">
+                                    <img src="../public/images/products/Untitled-4.png" height="70px" alt="T-shirt" class="item-image">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">T-shirts with multiple colors, for men and lady</h6>
+                                    <p class="text-muted small mb-0">Size: medium, Color: blue, Material: Plastic</p>
+                                    <p class="text-muted small mb-0">Seller: Artel Market</p>
+                                    <div class="d-flex my-3 desktop-only">
+                                        <button class="btn text-danger border me-2">Remove</button>
+                                        <button class="btn text-primary border me-2">Save for later</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-quantity px-2 mb-3">
+                                <div class="d-flex mt-2 input-group mobile-only w-50">
+                                    <button class="btn border">-</button>
+                                    <input type="text" class="form-control text-center" placeholder="2">
+                                    <button class="btn border">+</button>
+                                </div>
+                                <div class="">
+                                    <h6 class="">$78.99</h6>
+                                </div>
+                                <div class="d-flex align-items-center desktop-only">
+                                    <span class="me-2">Qty:</span>
+                                    <select class="form-select form-select-sm" style="width: 100px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option selected value="9">9</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="cart-item">
+                    <div class="inner align-items-center">
+                        <div class="">
+                        </div>
+                        <div class="cart-grid-custom border-bottom">
+                            <div class="d-flex pt-3">
+                                <div class="img-container mx-2">
+                                    <img src="../public/images/products/Untitled-4.png" height="70px" alt="T-shirt" class="item-image">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">T-shirts with multiple colors, for men and lady</h6>
+                                    <p class="text-muted small mb-0">Size: medium, Color: blue, Material: Plastic</p>
+                                    <p class="text-muted small mb-0">Seller: Artel Market</p>
+                                    <div class="d-flex my-3 desktop-only">
+                                        <button class="btn text-danger border me-2">Remove</button>
+                                        <button class="btn text-primary border me-2">Save for later</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-quantity px-2 mb-3">
+                                <div class="d-flex mt-2 input-group mobile-only w-50">
+                                    <button class="btn border">-</button>
+                                    <input type="text" class="form-control text-center" placeholder="2">
+                                    <button class="btn border">+</button>
+                                </div>
+                                <div class="">
+                                    <h6 class="">$78.99</h6>
+                                </div>
+                                <div class="d-flex align-items-center desktop-only">
+                                    <span class="me-2">Qty:</span>
+                                    <select class="form-select form-select-sm" style="width: 100px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option selected value="9">9</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="cart-item">
+                    <div class="inner align-items-center">
+                        <div class="">
+                        </div>
+                        <div class="cart-grid-custom border-bottom">
+                            <div class="d-flex pt-3">
+                                <div class="img-container mx-2">
+                                    <img src="../public/images/products/Untitled-4.png" height="70px" alt="T-shirt" class="item-image">
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">T-shirts with multiple colors, for men and lady</h6>
+                                    <p class="text-muted small mb-0">Size: medium, Color: blue, Material: Plastic</p>
+                                    <p class="text-muted small mb-0">Seller: Artel Market</p>
+                                    <div class="d-flex my-3 desktop-only">
+                                        <button class="btn text-danger border me-2">Remove</button>
+                                        <button class="btn text-primary border me-2">Save for later</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-quantity px-2 mb-3">
+                                <div class="d-flex mt-2 input-group mobile-only w-50">
+                                    <button class="btn border">-</button>
+                                    <input type="text" class="form-control text-center" placeholder="2">
+                                    <button class="btn border">+</button>
+                                </div>
+                                <div class="">
+                                    <h6 class="">$78.99</h6>
+                                </div>
+                                <div class="d-flex align-items-center desktop-only">
+                                    <span class="me-2">Qty:</span>
+                                    <select class="form-select form-select-sm" style="width: 100px;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option selected value="9">9</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary p-4">
+                <div class="cart-summary">
+                    <h5 class="mb-3">Order Summary</h5>
+                    
+                    <!-- Coupon -->
+                    <div class="mb-3">
+                        <label class="form-label">Have a coupon?</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Add coupon">
+                            <button class="btn btn-outline-primary">Apply</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Price Details -->
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span>$1403.97</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount:</span>
+                        <span class="discount">-$60.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax:</span>
+                        <span>+$14.00</span>
+                    </div>
+                    <hr>
+                    <!-- Total -->
+                    <div class="summary-row mb-4">
+                        <span class="fw-bold">Total:</span>
+                        <span class="fw-bold fs-5">$1357.97</span>
+                    </div>
+                    <!-- Checkout -->
+                    <button class="btn btn-light border w-100">Checkout</button>
+                    <!-- Payment Methods -->
+                    <div class="d-flex justify-content-between mt-3">
+                        <img src="/api/placeholder/40/25" alt="American Express">
+                        <img src="/api/placeholder/40/25" alt="Mastercard">
+                        <img src="/api/placeholder/40/25" alt="Visa">
+                        <img src="/api/placeholder/40/25" alt="Apple Pay">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------- Features ---------------------------- -->
+        <div class="features container ">
+            <div class="features-2 mb-4">
+                <div class=" features-box mb-1">
+                    <div class="d-flex align-items-center p-3 rounded h-100">
+                        <div class="icon-div me-2">
+                            <i class="fas fa-lock text-secondary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">Secure payment</h6>
+                            <p class="text-muted small mb-0">Have you ever finally just</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" features-box mb-1">
+                    <div class="d-flex align-items-center p-3 rounded h-100">
+                        <div class="icon-div me-2">
+                            <i class="fas fa-comment-dots text-secondary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">Customer support</h6>
+                            <p class="text-muted small mb-0">Have you ever finally just</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" features-box mb-1">
+                    <div class="d-flex align-items-center p-3 rounded h-100">
+                        <div class="icon-div me-2">
+                            <i class="fas fa-truck text-secondary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1">Free delivery</h6>
+                            <p class="text-muted small mb-0">Have you ever finally just</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------------------  Saved for Later---------------------------- -->
+        <div class="saved-later container">
+            <h5 class="mb-3 ps-2">Saved for later</h5>
+            <div class="saved-items-grid">
+                <div class="mb-3">
+                    <div class="saved-item">
+                        <img src="/api/placeholder/120/120" alt="Tablet" class="saved-item-image">
+                        <h6 class="mb-1">$99.50</h6>
+                        <p class="text-muted small mb-2">GoPro HERO6 4K Action Camera - Black</p>
+                        <div class="d-flex">
+                            <button class="action-btn btn text-primary w-50 text-center">
+                                <i class="fas fa-shopping-cart me-2"></i>Move to cart
+                            </button>
+                            <button class="action-btn btn text-danger w-50 text-center">
+                                <i class="fas fa-trash me-2"></i>Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="saved-item">
+                        <img src="/api/placeholder/120/120" alt="Smartphone" class="saved-item-image">
+                        <h6 class="mb-1">$99.50</h6>
+                        <p class="text-muted small mb-2">GoPro HERO6 4K Action Camera - Black</p>
+                        <div class="d-flex">
+                            <button class="action-btn btn text-primary w-50 text-center">
+                                <i class="fas fa-shopping-cart me-2"></i>Move to cart
+                            </button>
+                            <button class="action-btn btn text-danger w-50 text-center">
+                                <i class="fas fa-trash me-2"></i>Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="saved-item">
+                        <img src="/api/placeholder/120/120" alt="Smartwatch" class="saved-item-image">
+                        <h6 class="mb-1">$99.50</h6>
+                        <p class="text-muted small mb-2">GoPro HERO6 4K Action Camera - Black</p>
+                        <div class="d-flex">
+                            <button class="action-btn btn text-primary w-50 text-center">
+                                <i class="fas fa-shopping-cart me-2"></i>Move to cart
+                            </button>
+                            <button class="action-btn btn text-danger w-50 text-center">
+                                <i class="fas fa-trash me-2"></i>Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="saved-item">
+                        <img src="/api/placeholder/120/120" alt="Laptop" class="saved-item-image">
+                        <h6 class="mb-1">$99.50</h6>
+                        <p class="text-muted small mb-2">GoPro HERO6 4K Action Camera - Black</p>
+                        <div class="d-flex">
+                            <button class="action-btn btn text-primary w-50 text-center">
+                                <i class="fas fa-shopping-cart me-2"></i>Move to cart
+                            </button>
+                            <button class="action-btn btn text-danger w-50 text-center">
+                                <i class="fas fa-trash me-2"></i>Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------- Ad ---------------------------- -->
+        <div class="ad container my-4">
+            <div class="promo-banner p-3 bg-primary text-white">
+                <div class="d-flex justify-content-between align-items-center cont">
+                    <div>
+                        <h5 class="mb-1">Super discount on more than 100 USD</h5>
+                        <p class="mb-0">Have you ever finally just write dummy info</p>
+                    </div>
+                    <button class="shop-now-btn btn btn-warning">Shop now</button>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------- Footer ---------------------------- -->
+        <footer class="footer mt-5 py-3">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="footer-grid">
+                        <div class="">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded p-1 me-2">
+                                  <i class="fas fa-cube"></i>
+                                </div>
+                                <span class="text-primary fw-bold">Brand</span>
+                            </div>
+                            <p class="text-muted small">Best information about the company goes here but now lorem ipsum is</p>
+                            <div class="social-icons mt-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="footer-links">
+                                <h6>About</h6>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Find store</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="">
+                            <div class="footer-links">
+                                <h6>Partnership</h6>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Find store</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="">
+                            <div class="footer-links">
+                                <h6>Information</h6>
+                                <ul>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Money Refund</a></li>
+                                    <li><a href="#">Shipping</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="">
+                            <div class="footer-links">
+                                <h6>For users</h6>
+                                <ul>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">My Orders</a></li>
+                                </ul>
+                            </div>
+                            <div class="app-download mt-3">
+                                <h6>Get app</h6>
+                                <div class="d-flex">
+                                    <a href="#"><img src="/api/placeholder/120/40" alt="App Store"></a>
+                                    <a href="#"><img src="/api/placeholder/120/40" alt="Google Play"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-between py-4 border-top">
+                    <p class="text-muted small mb-0">© 2023 Ecommerce.</p>
+                    <div class="d-flex align-items-center">
+                        <span class="me-2">
+                            <img src="/api/placeholder/20/15" alt="US flag" class="me-1">
+                            English
+                        </span>
+                        <i class="fas fa-chevron-down small"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+
+</body>
+</html>

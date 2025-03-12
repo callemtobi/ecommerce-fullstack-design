@@ -7,7 +7,14 @@
 
 
 -> Day two:
+    - Created carousals
+    - Downloaded images
+    - Main page done
+
 -> Day three:
+    - Items list page creation
+    - 
+
 -> Day four:
 -> Day five:
 -> Day six:

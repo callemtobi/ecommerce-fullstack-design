@@ -1,0 +1,42 @@
+/* 360-800 */
+@media (max-width: 768px) {
+    /* ------------------ Navbar */
+    .navbar form button {display: none;}
+    .navbar form {display: block; width: 100%; margin-top: 0.5rem;}
+    .navbar form input {line-height: 2rem;}
+    .upper {margin: 0 7% !important; width: 100%; padding: 0 !important;}
+    .lower {overflow-x: hidden;}  
+    .lower .tags {overflow-x: scroll; white-space: nowrap; scrollbar-width: none;}
+    .lower ul li {display: inline-block;}
+    
+    /* ------------------ Front Page */
+    .front-img {padding: 2rem 0 4rem 2rem; background-image: url(../images/background/bg1.png); background-size: cover; background-position: center;}
+    .front-img-2 {/*padding: 2rem 0 4rem 2rem;*/ background-image: url(../images/background/bg2.png); background-size: cover; background-position: center;}
+    .front-img-2 h3 {padding: 2rem 0 0 2rem;}
+    .front-img-2 button {margin: 1rem 0 2rem 2rem;}
+    .carousal {border-bottom: 9px solid #F7FAFC;}
+    .carousal .title {display: block; white-space: nowrap;}
+    .carousal .src {border-bottom: 1px solid #e0e0e0;}
+    .carousal .title h4, .timer h4, .item h4 {font-size: 1.2rem;}
+    .carousal a {text-decoration: none;}
+    .item-container {overflow-x: scroll; scrollbar-width: none; border: 1px solid #e0e0e0;}
+    .item-container .item {/*height: 13rem;*/ height: fit-content; padding: 1rem 1.8rem; white-space: nowrap; border-right: 1px solid #DEE2E7;}
+    .item-container .item img {width: 120px; object-fit: contain;}
+    .item-container .item span {border-radius: 1rem; background-color: #ffebee; font-size: 1rem;}
+    
+    .item-container-last {display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; padding: 0.6rem; border: 1px solid #e0e0e0; background-color: #F7FAFC;}
+    .item-container-last .item {border-radius: 0.3rem; background-color: #fff; border: 1px solid #DEE2E7;}
+    .item-container-last .item span {color: gray;}
+    .item-container-last .item img {max-width: 100%; object-fit: contain;}
+    .item-container-last .item h4 {margin-top: 0.6rem;}
+}
+/* Tablet */
+/* @media (min-width: 768px) {} */
+
+@media (max-width: 410px) {
+    .carousal .offer .timer span {padding: 0 !important;}
+
+}
+@media (max-width: 325px) {
+    .carousal .offer .timer span {display: none;}
+}

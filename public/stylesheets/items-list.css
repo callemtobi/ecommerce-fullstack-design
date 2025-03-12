@@ -1,0 +1,36 @@
+.tags {overflow-x: scroll; white-space: nowrap; scrollbar-width: none;}
+.tags li { background-color: #EFF2F4; border-radius: 0.3rem; height: fit-content; padding: 0.2rem 0.6rem !important;}
+
+.filter-pill { border: 1px solid #0d6efd; color: #0d6efd; background-color: white; padding: 0.2rem 0.6rem !important; border-radius: 0.3rem;}
+
+.filter-products {background-color: #F7FAFC;}
+.products-list .product {background-color: #fff; border: 1px solid #EDEFF2;}
+.products-list img {height: 120px;}
+.ratin-stars {color: #FF9017;}
+.free-shipping {color: #4BCB5B;}
+
+.rec { background-color: #F7FAFC; overflow-x: scroll; scrollbar-width: none;}
+.rec .item {background-color: #fff; border-radius: 0.3rem; border: 1px solid #DEE2E7;}
+.rec .item span {color: gray;}
+.rec .item h4 {margin: 0.4rem 0 0 0 !important;}
+.rec img {height: 140px; }
+
+/*  */
+.nwrap {white-space: nowrap;}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none !important;
+    }
+    .navigation .desktop-only .dropdown-toggle {border-radius: 0;}
+    .main2 {display: grid; grid-template-columns: 2fr 5fr;}
+    
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .desktop-only {
+        display: none !important;
+    }
+}
