@@ -14,183 +14,859 @@
     <title>Main</title>
 </head>
 <body>
-    <!-- Navigation Panel -->
-    <nav class="navbar bg-body-tertiary">
-        <div class="upper container">
-            <a class="navbar-brand" href="#">
-                <img src="/images/" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Brand
-            </a>
-            <div class="icons">
-                <ul class="d-flex" style="list-style: none;">
-                    <span><i class="fa-solid fa-cart-shopping mx-2"></i></span>
-                    <span><i class="fa-regular fa-user mx-2"></i></span>
-                    <!-- <li><div class="icon-items mx-2"><img src="" alt="" name="profile"><label for="profile">My Cart</label></div></li>
-                    <li><div class="icon-items mx-2"><img src="" alt="" name="profile"><label for="profile">Profile</label></div></li> -->
-                    <!-- <li><div class="icon-items"><img src="" alt="" name="profile"><label for="profile">Message</label></div></li> -->
-                    <!-- <li><div class="icon-items"><img src="" alt="" name="profile"><label for="profile">Orders</label></div></li> -->
-                </ul>
-            </div>
-            <form action="" class="">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                      </ul>
-                    <button class="btn btn-primary" type="submit">Search</button>
+    <div class="main">
+        <!-- ----------------------------------------------- -->
+        <div class="desktop-only">
+            <!-- --------------------- Navigation -------------------------- -->
+            <div class="navigation">
+                <!-- Desktop -->
+                <div class="desktop-only mx-5 mb-4 desk-nav">
+                    <div class="row py-3 align-items-center">
+                    <div class="col-md-3">
+                        <a href="#" class="text-decoration-none">
+                        <div class="d-flex align-items-center">
+                        <div class="bg-primary text-white rounded p-1 me-2">
+                        <i class="fas fa-cube"></i>
+                        </div>
+                        <span class="text-primary fw-bold">Brand</span>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-5 input-g">
+                        <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">All category</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        <button class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-end">
+                        <a href="#" class="text-decoration-none text-secondary mx-2 text-center">
+                            <i class="fas fa-user d-block mb-1"></i>
+                            <small>Profile</small>
+                        </a>
+                        <a href="#" class="text-decoration-none text-secondary mx-2 text-center">
+                            <i class="fas fa-envelope d-block mb-1"></i>
+                            <small>Message</small>
+                        </a>
+                        <a href="#" class="text-decoration-none text-secondary mx-2 text-center">
+                            <i class="fas fa-heart d-block mb-1"></i>
+                            <small>Orders</small>
+                        </a>
+                        <a href="#" class="text-decoration-none text-secondary mx-2 text-center">
+                            <i class="fas fa-shopping-cart d-block mb-1"></i>
+                            <small>My cart</small>
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Navigation Two -->
+                    <div class="container-fluid bg-light py-2 desktop-only">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-md-8">
+                            <div class="d-flex">
+                                <button class="btn btn-sm me-3">
+                                <i class="fas fa-bars me-2"></i> All category
+                                </button>
+                                <a href="#" class="text-decoration-none text-dark me-3">Hot offers</a>
+                                <a href="#" class="text-decoration-none text-dark me-3">Gift boxes</a>
+                                <a href="#" class="text-decoration-none text-dark me-3">Projects</a>
+                                <a href="#" class="text-decoration-none text-dark me-3">Menu item</a>
+                                <a href="#" class="text-decoration-none text-dark">Help <i class="fas fa-chevron-down small"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <span class="me-3">English, USD <i class="fas fa-chevron-down small"></i></span>
+                            <span>Ship to <img src="../public/images/flags/britain.png" height="18px" class="flag-icon" alt="Flag"> <i class="fas fa-chevron-down small"></i></span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Breadcrumbs -->
+                    <div class="container mt-3 desktop-only">
+                    <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Clothing</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Men's wear</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Summer clothing</li>
+                    </ol>
+                    </nav>
+                    </div>
                 </div>
-            </form>
+                </div>
+            </div>
+            <!-- --------------------- Main -------------------------- -->
+            <div class="upper-main py-4 desktop-only">
+                <div class="container">
+                    <div class="row">
+                        <!--  -->
+                        <div class="col-md-3 mb-4">
+                            <div class="category-sidebar">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="#" class="text-decoration-none text-dark">Automobiles</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="text-decoration-none text-dark">Clothes and wear</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="text-decoration-none text-dark">Home interiors</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="text-decoration-none text-dark">Computer and tech</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="text-decoration-none text-dark">Tools, equipments</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="text-decoration-none text-dark">Sports and outdoor</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="text-decoration-none text-dark">Animal and pets</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="text-decoration-none text-dark">Machinery tools</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="text-decoration-none text-dark">More category</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col mb-4 front-img-container p-5 ">
+                            <div class="banner-section">
+                                <h2>Latest trending<br>Electronic items</h2>
+                                <a href="#" class="btn btn-light btn-sm">Learn more</a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">Hi, user<br>let's get started</p>
+                                    <a href="#" class="btn btn-primary btn-sm mb-2 w-100">Join now</a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm w-100">Log in</a>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-body">
+                                    <p class="card-text fw-bold">Get US $50 off with a new supplier</p>
+                                </div>
+                            </div>
+                            <div class="card mt-1">
+                                <div class="card-body">
+                                    <p class="card-text">Send quotes with supplier preferences</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="desktop-only">
+                <div class="container">
+                    <div class="deals-offers border">
+                        <!--  -->
+                        <div class="">
+                            <div class="offer mt-2 px-3">
+                                <div class="title">
+                                    <h5 class="fw-bold m-0">Deals and Offers</h5>
+                                    <h5 class="fw-normal">Hygiene equipments</h5>
+                                </div>
+                                <div class="timer mt-3 d-flex">
+                                    <span class="badge text-bg-secondary me-1"><h5 class="fw-bold">12</h5><h5 class="fw-normal">Days</h5></span>
+                                    <span class="badge text-bg-secondary mx-1"><h5 class="fw-bold">12</h5><h5 class="fw-normal">Hour</h5></span>
+                                    <span class="badge text-bg-secondary mx-1"><h5 class="fw-bold">12</h5><h5 class="fw-normal">Min</h5></span>
+                                    <span class="badge text-bg-secondary mx-1"><h5 class="fw-bold">12</h5><h5 class="fw-normal">Sec</h5></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="">
+                            <div class="rec row container text-center">
+                                <div class="col item p-3 border-left">
+                                  <img src="../public/images/tech/8.jpg" alt="">
+                                  <h4>Smart Watch</h4>
+                                  <span class="badge text-danger px-3">25%</span>
+                                </div>
+                                <div class="col item p-3 border-left">
+                                    <img src="../public/images/tech/7.jpg" alt="">
+                                    <h4>Smart Watch</h4>
+                                    <span class="badge text-danger px-3">25%</span>
+                                </div>
+                                <div class="col item p-3 border-left">
+                                  <img src="../public/images/tech/6.jpg" alt="">
+                                  <h4>Smart Watch</h4>
+                                  <span class="badge text-danger px-3">25%</span>
+                                </div>
+                                <div class="col item p-3 border-left">
+                                    <img src="../public/images/tech/5.jpg" alt="">
+                                    <h4>Smart Watch</h4>
+                                    <span class="badge text-danger px-3">25%</span>
+                                </div>
+                                <div class="col item p-3 border-left">
+                                    <img src="../public/images/tech/3.jpg" alt="">
+                                    <h4>Smart Watch</h4>
+                                    <span class="badge text-danger px-3">25%</span>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="desktop-only">
+                <div class="container">
+                    <div class="home-outdoor border my-3">
+                        <div class="p-3">
+                            <h5 class="fw-bold nwrap">Home and outdoor</h5>
+                            <a href="#" class="btn btn-light bg-white btn-sm">Source now</a>
+                        </div>
+                        <div class="img-div">
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/1.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/2.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/3.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/4.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/5.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/6.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/7.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/8.jpg" height="60px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="desktop-only">
+                <div class="container">
+                    <div class="home-outdoor border my-3">
+                        <div class="p-3">
+                            <h5 class="fw-bold">Consumer electronics and gadgets</h5>
+                            <a href="#" class="btn btn-light bg-white btn-sm">Source now</a>
+                        </div>
+                        <div class="img-div">
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/8.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/7.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/6.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/5.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/4.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/3.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/2.jpg" height="60px" alt="">
+                            </div>
+                            <div class="img-container border position-relative ">
+                                <h5 class="mb-1">Soft chairs</h5>
+                                <p class="text-secondary">From USD 19</p>
+                                <img class="position-absolute bottom-0 end-0" src="../public/images/interior/1.jpg" height="60px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!--  -->
+        <!-- Request Form Section -->
+        <div class="desktop-only">
+            <div class="container mb-5">
+                <div class="request-section p-4">
+                    <div class="row">
+                        <div class="col-md-6 text-white">
+                            <h4>An easy way to send <br>requests to all suppliers</h4>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-container p-4 bg-white">
+                                <h5 class="mb-3">Send quote to suppliers</h5>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="What item you need?">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" rows="3" placeholder="Type more details"></textarea>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-8">
+                                            <input type="number" class="form-control" placeholder="Quantity">
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="form-select">
+                                                <option>Pcs</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send inquiry</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="desktop-only">
+            <div class="container rec-section">
+                <!-- Recommended Items Section -->
+                <div class="mb-4">
+                    <div class="category-header">
+                        <h5 class="mb-0">Recommended items</h5>
+                    </div>
+                    <div class="row row-cols-2 row-cols-md-5 g-3">
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card p-3">
+                                <img src="../public/images/products/Untitled-4.png" class="card-img-top" alt="T-shirt">
+                                <div class="card-body p-2">
+                                    <p class="price mb-1">$10.30</p>
+                                    <p class="card-text text-muted small">T-shirts with multiple colors, for men</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!-- Services Section -->
+        <div class="desktop-only">
+            <div class="container service-sec">
+                <div class="mb-5">
+                    <div class="category-header border-bottom pb-3">
+                        <h5 class="mb-0">Our extra services</h5>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <div class="service-card border">
+                                <div class="image-cont border"></div>
+                                <div class="icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h6 class="p-3">Source from Industry Hubs</h6>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="service-card border">
+                                <div class="image-cont border"></div>
+                                <div class="icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h6 class="p-3">Source from Industry Hubs</h6>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="service-card border">
+                                <div class="image-cont border"></div>
+                                <div class="icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h6 class="p-3">Source from Industry Hubs</h6>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="service-card border">
+                                <div class="image-cont border"></div>
+                                <div class="icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h6 class="p-3">Source from Industry Hubs</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="desktop-only">
+            <div class="container">
+                <!-- Suppliers by Region Section -->
+                <div class="mb-5">
+                    <div class="category-header">
+                        <h5 class="mb-0">Suppliers by region</h5>
+                    </div>
+                    <div class="sup-section">
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/uae.png" height="18px" alt="Arabic Emirates">
+                                <p class="mb-0">Arabic Emirates</p>
+                                <small class="text-muted">shopname.ae</small>
+                            </div>
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/australia.png" height="18px" alt="Australia">
+                                <p class="mb-0">Australia</p>
+                                <small class="text-muted">shopname.au</small>
+                            </div>
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/usa.png" height="18px" alt="United States">
+                                <p class="mb-0">United States</p>
+                                <small class="text-muted">shopname.com</small>
+                            </div>
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/russia.png" height="18px" alt="Russia">
+                                <p class="mb-0">Russia</p>
+                                <small class="text-muted">shopname.ru</small>
+                            </div>
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/italy.png" height="18px" alt="Italy">
+                                <p class="mb-0">Italy</p>
+                                <small class="text-muted">shopname.it</small>
+                            </div>
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/denmark.png" height="18px" alt="Denmark">
+                                <p class="mb-0">Denmark</p>
+                                <small class="text-muted">shopname.dk</small>
+                            </div>
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/france.png" height="18px" alt="France">
+                                <p class="mb-0">France</p>
+                                <small class="text-muted">shopname.fr</small>
+                            </div>
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/uae.png" height="18px" alt="Arabic Emirates">
+                                <p class="mb-0">Arabic Emirates</p>
+                                <small class="text-muted">shopname.ae</small>
+                            </div>
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/china.png" height="18px" alt="China">
+                                <p class="mb-0">China</p>
+                                <small class="text-muted">shopname.cn</small>
+                            </div>
+                            <div class="supplier-card">
+                                <img src="../public/images/flags/britain.png" height="18px" alt="Great Britain">
+                                <p class="mb-0">Great Britain</p>
+                                <small class="text-muted">shopname.co.uk</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------------- -->
+        <div class="mobile-only">
+            <!-- Navigation Panel -->
+            <nav class="navbar bg-body-tertiary">
+                <div class="upper container">
+                    <a class="navbar-brand" href="#">
+                        <img src="../public/images/brand/logo-white.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Brand
+                    </a>
+                    <div class="icons">
+                        <ul class="d-flex" style="list-style: none;">
+                            <span><i class="fa-solid fa-cart-shopping mx-2"></i></span>
+                            <span><i class="fa-regular fa-user mx-2"></i></span>
+                        </ul>
+                    </div>
+                    <form action="#" class="">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <hr>
+                
+                <div class="lower container">
+                    <div class="tags">
+                        <ul class="d-flex list-group list-group-horizontal mb-2" style="list-style: none;">
+                            <li class="me-2 list-group-item text-primary">All category</li>
+                            <li class="mx-2 list-group-item text-primary">Gadgets</li>
+                            <li class="mx-2 list-group-item text-primary">Clothes</li>
+                            <li class="mx-2 list-group-item text-primary">Accessories</li>
+                            <li class="mx-2 list-group-item text-primary">Electronics</li>
+                            <li class="ms-2 list-group-item text-primary">Help</li>
+                        </ul>
+                    </div>
+                    <div class="shipment"></div>
+                </div>
+            </nav>
+            
         
-        <hr>
+            <!-- Front Page -->
+            <div class="front-img mt-4">
+               <h3 class="fw-normal">Latest Trending</h3>
+               <h3 class="fw-bold">Electronic Items</h3>
+               <button class="btn text-primary bg-light mt-3">Learn more</button>
+            </div>
+            <!-- Carousals -->
+            <div class="carousal mb-4 mt-2">
+                <div class="offer d-flex justify-content-between mb-2 px-3">
+                    <div class="title">
+                        <h4 class="fw-bold">Deals and Offers</h4>
+                        <h4 class="fw-normal">Electronic equipments</h4>
+                    </div>
+                    <div class="timer d-flex">
+                        <span class="badge text-bg-light ms-1"><h4 class="fw-bold">12</h4><h4 class="fw-normal">Hour</h4></span>
+                        <span class="badge text-bg-light mx-1"><h4 class="fw-bold">12</h4><h4 class="fw-normal">Hour</h4></span>
+                        <span class="badge text-bg-light"><h4 class="fw-bold">12</h4><h4 class="fw-normal">Hour</h4></span>
+                    </div>
+                </div>
+                <div class="item-container d-flex text-center">
+                    <div class="item pt-3">
+                        <img src="../public/images/products/Untitled-1.png" alt="">
+                        <h4>Smart Watch</h4>
+                        <span class="badge text-danger px-3">25%</span>
+                    </div>
+                    <div class="item pt-3">
+                        <img src="../public/images/products/Untitled-2.png" alt="">
+                        <h4>Smart Watch</h4>
+                        <span class="badge text-danger px-3">25%</span>
+                    </div>
+                    <div class="item pt-3">
+                        <img src="../public/images/products/Untitled-3.png" alt="">
+                        <h4>Smart Watch</h4>
+                        <span class="badge text-danger px-3">25%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousal my-4">
+                <div class="d-flex container-fluid justify-content-between mb-2">
+                    <div class="title">
+                        <h4 class="fw-bold">Home and Outdoor</h4>
+                    </div>
+                </div>
+                <div class="item-container d-flex text-center mb-3">
+                    <div class="item pt-3">
+                        <img src="../public/images/products/Untitled-1.png" alt="">
+                        <h4>Smart Watch</h4>
+                        <span class="badge text-danger px-3">25%</span>
+                    </div>
+                    <div class="item pt-3">
+                        <img src="../public/images/products/Untitled-2.png" alt="">
+                        <h4>Smart Watch</h4>
+                        <span class="badge text-danger px-3">25%</span>
+                    </div>
+                    <div class="item pt-3">
+                        <img src="../public/images/products/Untitled-3.png" alt="">
+                        <h4>Smart Watch</h4>
+                        <span class="badge text-danger px-3">25%</span>
+                    </div>
+                </div>
+                <div class="src d-flex container-fluid justify-content-between">
+                    <div class="title mb-3">
+                        <a href="#" class="fs-6 ms-2">Source now <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousal mt-4">
+                <div class="d-flex container-fluid justify-content-between mb-2">
+                    <div class="title">
+                        <h4 class="fw-bold">Consumer and Electronics</h4>
+                    </div>
+                </div>
+                <div class="item-container d-flex text-center mb-3">
+                    <div class="item pt-3">
+                        <img src="../public/images/products/Untitled-4.png" alt="">
+                        <h4>Smart Watch</h4>
+                        <span class="badge text-danger px-3">25%</span>
+                    </div>
+                    <div class="item pt-3">
+                        <img src="../public/images/products/Untitled-5.png" alt="">
+                        <h4>Smart Watch</h4>
+                        <span class="badge text-danger px-3">25%</span>
+                    </div>
+                    <div class="item pt-3">
+                        <img src="../public/images/products/Untitled-6.png" alt="">
+                        <h4>Smart Watch</h4>
+                        <span class="badge text-danger px-3">25%</span>
+                    </div>
+                </div>
+                <div class="src d-flex container-fluid justify-content-between">
+                    <div class="title mb-3">
+                        <a href="#" class="fs-6 ms-2">Source now <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fronpage image 2 -->
+            <div class="front-img-2 mb-2">
+                <h3 class="fw-bold text-light">An easy way to send <br> requests to all suppliers</h3>
+                <!-- <h3 class="fw-bold">Electornic Items</h3> -->
+                <button class="btn btn-primary">Learn more</button>
+            </div>
         
-        <div class="lower container">
-            <div class="tags">
-                <ul class="d-flex list-group list-group-horizontal mb-2" style="list-style: none;">
-                    <li class="me-2 list-group-item text-primary">All category</li>
-                    <li class="mx-2 list-group-item text-primary">Gadgets</li>
-                    <li class="mx-2 list-group-item text-primary">Clothes</li>
-                    <li class="mx-2 list-group-item text-primary">Accessories</li>
-                    <li class="mx-2 list-group-item text-primary">Electronics</li>
-                    <li class="ms-2 list-group-item text-primary">Help</li>
-                </ul>
+            <div class="carousal mt-4">
+                <div class="d-flex container-fluid justify-content-between mb-2">
+                    <div class="title">
+                        <h4 class="fw-bold">Recommended Items</h4>
+                    </div>
+                </div>
+                <div class="item-container-last mb-3">
+                    <div class="item p-3">
+                        <img src="../public/images/products/Untitled-4.png" alt="">
+                        <h4>$10.30</h4>
+                        <span class="price">T-shirt with multiple colours, for men</span>
+                    </div>
+                    <div class="item p-3">
+                        <img src="../public/images/products/Untitled-5.png" alt="">
+                        <h4>$10.30</h4>
+                        <span class="price">T-shirt with multiple colours, for men</span>
+                    </div>
+                    <div class="item p-3">
+                        <img src="../public/images/products/Untitled-6.png" alt="">
+                        <h4>$10.30</h4>
+                        <span class="price">T-shirt with multiple colours, for men</span>
+                    </div>
+                </div>
             </div>
-            <div class="shipment"></div>
         </div>
-    </nav>
-    
 
+        <!-- Both -->
+        <!-- Newsletter -->
+        <section class="container py-4 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h4>Subscribe on our newsletter</h4>
+                        <p class="text-muted mb-4">Get daily news on upcoming offers from many suppliers all over the world</p>
+                        <form class="d-flex justify-content-center">
+                            <div class="input-group" style="max-width: 500px;">
+                                <span class="input-group-text bg-white border-end-0">
+                                    <i class="far fa-envelope text-muted"></i>
+                                </span>
+                                <input type="email" class="form-control border-start-0" placeholder="Email">
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-    <!-- Front Page -->
-    <div class="front-img mt-4">
-       <h3 class="fw-normal">Latest Trending</h3>
-       <h3 class="fw-bold">Electronic Items</h3>
-       <button class="btn text-primary bg-light mt-3">Learn more</button>
-    </div>
-    <!-- Carousals -->
-    <div class="carousal mb-4 mt-2">
-        <div class="offer d-flex justify-content-between mb-2 px-3">
-            <div class="title">
-                <h4 class="fw-bold">Deals and Offers</h4>
-                <h4 class="fw-normal">Electronic equipments</h4>
+        <footer class="footer mt-5 py-3">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="footer-grid">
+                        <div class="">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary text-white rounded p-1 me-2">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <span class="text-primary fw-bold">Brand</span>
+                            </div>
+                            <p class="text-muted small">Best information about the company goes here but now lorem ipsum is</p>
+                            <div class="social-icons mt-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+      
+                        <div class="">
+                            <div class="footer-links">
+                                <h6>About</h6>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Find store</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="">
+                            <div class="footer-links">
+                                <h6>Partnership</h6>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Find store</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                    <li><a href="#">Blogs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="">
+                            <div class="footer-links">
+                                <h6>Information</h6>
+                                <ul>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Money Refund</a></li>
+                                    <li><a href="#">Shipping</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="">
+                            <div class="footer-links">
+                                <h6>For users</h6>
+                                <ul>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#">My Orders</a></li>
+                                </ul>
+                            </div>
+                            <div class="app-download mt-3">
+                                <h6>Get app</h6>
+                                <div class="d-flex">
+                                    <a href="#"><img src="../public/images/background/" alt="App Store"></a>
+                                    <a href="#"><img src="/api/placeholder/120/40" alt="Google Play"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-between py-4 border-top">
+                    <p class="text-muted small mb-0">© 2023 Ecommerce.</p>
+                    <div class="d-flex align-items-center">
+                        <span class="me-2">
+                            <img src="../public/images/flags/usa.png" height="18px" alt="US flag" class="me-1">
+                            English
+                        </span>
+                        <i class="fas fa-chevron-down small"></i>
+                    </div>
+                </div>
             </div>
-            <div class="timer d-flex">
-                <span class="badge text-bg-light ms-1"><h4 class="fw-bold">12</h4><h4 class="fw-normal">Hour</h4></span>
-                <span class="badge text-bg-light mx-1"><h4 class="fw-bold">12</h4><h4 class="fw-normal">Hour</h4></span>
-                <span class="badge text-bg-light"><h4 class="fw-bold">12</h4><h4 class="fw-normal">Hour</h4></span>
-            </div>
-        </div>
-        <div class="item-container d-flex text-center">
-            <div class="item pt-3">
-                <img src="../public/images/products/Untitled-1.png" alt="">
-                <h4>Smart Watch</h4>
-                <span class="badge text-danger px-3">25%</span>
-            </div>
-            <div class="item pt-3">
-                <img src="../public/images/products/Untitled-2.png" alt="">
-                <h4>Smart Watch</h4>
-                <span class="badge text-danger px-3">25%</span>
-            </div>
-            <div class="item pt-3">
-                <img src="../public/images/products/Untitled-3.png" alt="">
-                <h4>Smart Watch</h4>
-                <span class="badge text-danger px-3">25%</span>
-            </div>
-        </div>
-    </div>
-    <div class="carousal my-4">
-        <div class="d-flex container-fluid justify-content-between mb-2">
-            <div class="title">
-                <h4 class="fw-bold">Home and Outdoor</h4>
-            </div>
-        </div>
-        <div class="item-container d-flex text-center mb-3">
-            <div class="item pt-3">
-                <img src="../public/images/products/Untitled-1.png" alt="">
-                <h4>Smart Watch</h4>
-                <span class="badge text-danger px-3">25%</span>
-            </div>
-            <div class="item pt-3">
-                <img src="../public/images/products/Untitled-2.png" alt="">
-                <h4>Smart Watch</h4>
-                <span class="badge text-danger px-3">25%</span>
-            </div>
-            <div class="item pt-3">
-                <img src="../public/images/products/Untitled-3.png" alt="">
-                <h4>Smart Watch</h4>
-                <span class="badge text-danger px-3">25%</span>
-            </div>
-        </div>
-        <div class="src d-flex container-fluid justify-content-between">
-            <div class="title mb-3">
-                <a href="#" class="fs-6 ms-2">Source now <i class="fa-solid fa-arrow-right ms-2"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="carousal mt-4">
-        <div class="d-flex container-fluid justify-content-between mb-2">
-            <div class="title">
-                <h4 class="fw-bold">Consumer and Electronics</h4>
-            </div>
-        </div>
-        <div class="item-container d-flex text-center mb-3">
-            <div class="item pt-3">
-                <img src="../public/images/products/Untitled-4.png" alt="">
-                <h4>Smart Watch</h4>
-                <span class="badge text-danger px-3">25%</span>
-            </div>
-            <div class="item pt-3">
-                <img src="../public/images/products/Untitled-5.png" alt="">
-                <h4>Smart Watch</h4>
-                <span class="badge text-danger px-3">25%</span>
-            </div>
-            <div class="item pt-3">
-                <img src="../public/images/products/Untitled-6.png" alt="">
-                <h4>Smart Watch</h4>
-                <span class="badge text-danger px-3">25%</span>
-            </div>
-        </div>
-        <div class="src d-flex container-fluid justify-content-between">
-            <div class="title mb-3">
-                <a href="#" class="fs-6 ms-2">Source now <i class="fa-solid fa-arrow-right ms-2"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- Fronpage image 2 -->
-    <div class="front-img-2 mb-2">
-        <h3 class="fw-bold text-light">An easy way to send <br> requests to all suppliers</h3>
-        <!-- <h3 class="fw-bold">Electornic Items</h3> -->
-        <button class="btn btn-primary">Learn more</button>
-    </div>
-
-    <div class="carousal mt-4">
-        <div class="d-flex container-fluid justify-content-between mb-2">
-            <div class="title">
-                <h4 class="fw-bold">Recommended Items</h4>
-            </div>
-        </div>
-        <div class="item-container-last mb-3">
-            <div class="item p-3">
-                <img src="../public/images/products/Untitled-4.png" alt="">
-                <h4>$10.30</h4>
-                <span class="price">T-shirt with multiple colours, for men</span>
-            </div>
-            <div class="item p-3">
-                <img src="../public/images/products/Untitled-5.png" alt="">
-                <h4>$10.30</h4>
-                <span class="price">T-shirt with multiple colours, for men</span>
-            </div>
-            <div class="item p-3">
-                <img src="../public/images/products/Untitled-6.png" alt="">
-                <h4>$10.30</h4>
-                <span class="price">T-shirt with multiple colours, for men</span>
-            </div>
-        </div>
+        </footer>
     </div>
 
     <!-- Scripts -->

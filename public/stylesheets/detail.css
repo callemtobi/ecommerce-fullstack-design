@@ -3,13 +3,22 @@
     .mobile-only {
         display: none !important;
     }
-    
+    .footer-grid {
+        display: grid;
+        grid-template-columns:  repeat(5, 1fr);
+    }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
     .desktop-only {
         display: none !important;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr);
+        row-gap: 2rem;
+        column-gap: 1rem;
     }
 }
 
@@ -49,8 +58,21 @@
 /* .sim-pro .desktop-only { background-color: #fff; border-radius: 0.375rem; border: 1px solid #DEE2E7; } */
 .sim-pro .desktop-only .pro { overflow-x: scroll; scrollbar-width: none;}
 
-.footer { background-color: #fff; }
+footer { background-color: #fff; }
+footer .footer-links ul{ list-style: none; padding: 0;}
+footer .footer-links ul li{ margin-bottom: .6rem;}
 
+footer a {text-decoration: none; color: #666;}
+footer .footer-links a:hover { color: #2979ff; }
+footer .social-icons a {
+    color: #666;
+    margin-right: 15px;
+    font-size: 18px;
+}
+footer .app-download img {
+    height: 40px;
+    margin-right: 10px;
+}
 
 
 
