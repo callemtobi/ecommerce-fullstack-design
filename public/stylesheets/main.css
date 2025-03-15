@@ -62,9 +62,11 @@
 
 .front-img-container {background-image: url(../images/background/Banner-board-800x420.png); background-size: cover; background-position: center;}
 .banner-section {height: 100%;}
+.home-outdoor .home-cont {background-image: url(../images/background/Group969.png); background-size: cover; background-position: center;}
+.home-outdoor .consumer-elec  {background-image: url(../images/background/Group970.png); background-size: cover; background-position: center;}
 .home-outdoor .img-div {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;}
 .home-outdoor .img-container {width: 100%; height: 5rem; padding: 1rem;}
-.home-outdoor .img-container h5 {font-size: 1rem;}
+.home-outdoor .img-container h5{font-size: 1rem;}
 .home-outdoor .img-container p {font-size: .9rem;}
 
 .request-section .form-container{border-radius: .4rem;}
@@ -79,6 +81,7 @@
     align-items: center;
 }
 .rec-section .product-card {border-radius: .4rem; border: 1px solid #DEE2E7;}
+.rec-section .product-card img { padding: 1rem;}
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -107,7 +110,7 @@
 }
 
 .sup-section {display: grid; grid-template-columns: repeat(5, 1fr); row-gap: .7rem;}
-.sup-section div {border: 1px solid #DEE2E7; padding: .5rem;}
+.sup-section div { padding: .5rem;}
 
 footer { background-color: #fff; }
 footer .footer-links ul{ list-style: none; padding: 0;}
