@@ -20,6 +20,15 @@
         row-gap: 2rem;
         column-gap: 1rem;
     }
+    .product .mobile-only .flex {
+        display: flex; 
+        column-gap: 1rem; 
+        overflow-x: scroll; 
+        scrollbar-width: none;   
+    }
+    .product .mobile-only .flex img {
+        height: 20rem !important;
+    }
 }
 
 .main { background-color: #F7FAFC; }

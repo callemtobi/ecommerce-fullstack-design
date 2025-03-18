@@ -1,0 +1,7 @@
+Packages: 
+    - Express
+    - Mongoose
+    - DOTENV
+    - CryptoJS
+    - EJS
+    - JWT

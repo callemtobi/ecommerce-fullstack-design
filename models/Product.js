@@ -1,17 +1,17 @@
 import mongoose from "mongoose";
 
-// Database Schema
 const productSchema = new mongoose.Schema({
-    // img: { type: buffer, contentType: String },
-    title: String,
-    reviews: String,
-    price: Number,
-    company: String,
-    category: Array,
-    color: String
-    // star: 
+    // Unique ID is generated automatically
+    name: {type: String, unique: true},
+    price: {type: Number, required: true},
+    // img: { data: buffer, contentType: String, required: true },
+    description: {type: String, required: true},
+    category: {type: Array},
+    stock: {type: String, required: true}
+}, {
+    timestamps: true
 })
-// Model
+
 const Product = new mongoose.model('Product', productSchema);
 
 export default Product; // ---> import {Product} from './js/schema'
