@@ -3,14 +3,16 @@ import mongoose from "mongoose";
 import "dotenv/config";
 
 // Routes
-import userRoute from "./routes/user.js";
 import Auth from "./routes/auth.js";
+import userRoute from "./routes/user.js";
 import productRoute from "./routes/product.js";
 import orderRoute from "./routes/order.js";
-import orderRoute from "./routes/order.js";
+import cartRoute from "./routes/cart.js";
 // Models
 import Product from "./models/Product.js";
 import User from "./models/User.js";
+import Order from "./models/Order.js";
+import Cart from "./models/Cart.js";
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -39,6 +41,8 @@ app.get("/", (req, res) => {
 app.use("/api/user", userRoute);
 app.use("/api/user", Auth);
 app.use("/api/products", productRoute);
+app.use("/api/orders", orderRoute);
+app.use("/api/carts", cartRoute);
 
 // app.get('/main', (req, res) => {
 //     Product.find()
