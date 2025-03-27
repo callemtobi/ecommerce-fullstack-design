@@ -8,6 +8,7 @@ import userRoute from "./routes/user.js";
 import productRoute from "./routes/product.js";
 import orderRoute from "./routes/order.js";
 import cartRoute from "./routes/cart.js";
+import mainRoute from "./routes/main.js";
 // Models
 import Product from "./models/Product.js";
 import User from "./models/User.js";
@@ -35,32 +36,13 @@ mongoose.connection.once("open", () => {
 });
 
 // ----------------------------------- Routes
-app.get("/", (req, res) => {
-    res.send("Welcome to Home");
-});
-app.use("/api/user", userRoute);
-app.use("/api/user", Auth);
-app.use("/api/products", productRoute);
-app.use("/api/orders", orderRoute);
-app.use("/api/carts", cartRoute);
 
-// app.get('/main', (req, res) => {
-//     Product.find()
-//     .then(data => { console.log(data)})
-//     .catch(err => {console.log('error:' + err)})
-// })
-// app.post('/', async (req, res) => {
-//     const { title, reviews, price, company, category, color } = req.body;
-
-//     const newProduct = new Product({ title, reviews, price, company, category, color });
-
-//     try {
-//         const savedProduct = await newProduct.save();
-//         res.status(201).json(savedProduct);
-//     } catch (error) {
-//         res.status(400).json({ message: error.message });
-//     }
-// })
+app.use("/", mainRoute);
+app.use("/user", userRoute);
+app.use("/auth", Auth);
+app.use("/products", productRoute);
+app.use("/orders", orderRoute);
+app.use("/carts", cartRoute);
 
 // ----------------------------------- Port
 app.listen(PORT, () => {

@@ -54,16 +54,16 @@ router.post('/register', (req, res) => {
         if(!userExists) { 
             User.insertOne(user); 
             console.log('----> User registered'); 
-            return res.redirect('/')
+            return res.redirect('/home')
         } else if (userExists.username === user.username) {
             console.log('--> User with that username exists.');
-            return res.redirect('/api/user/register');
+            return res.redirect('/auth/register');
         } else if (userExists.email === user.email) {
             console.log('--> User with that email exists.');
-            return res.redirect('/api/user/register');
+            return res.redirect('/auth/register');
         } else { 
             console.log('-------->Error')
-            return res.redirect('/api/user/register');
+            return res.redirect('/auth/register');
         }
     })
     .catch(err => {console.log('Error: ' + err);})

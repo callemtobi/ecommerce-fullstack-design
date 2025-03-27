@@ -1,6 +1,8 @@
-import { Router } from "express";
+import { response, Router } from "express";
 import { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } from './tokenVerify.js';
 import Product from "../models/Product.js";
+import { publicRequest, userRequest } from "../routes/requestMethod.js";
+import axios from "axios";
 
 const router = Router();
 
@@ -17,7 +19,7 @@ router.post('/add', verifyTokenAndAdmin, async (req, res) => {
 })
 
 // GET
-router.get('/find/:id', verifyToken, async (req, res) => {
+router.get('/find/:id', async (req, res) => {
     try {
         const getProduct = await Product.findById(req.params.id);
         return res.status(200).json(getProduct);
@@ -26,9 +28,10 @@ router.get('/find/:id', verifyToken, async (req, res) => {
     }
 })
 // Get All Products
-router.get('/find', verifyToken, async (req, res) => {
+router.get('/', async (req, res) => {
     const query = req.query.category;
     try {
+        // const response = userRequest.get('/products');
         const getProducts = query? await Product.find({category: {$in: [query]}}) : await Product.find();
         return res.status(200).json(getProducts);
     } catch (err) {

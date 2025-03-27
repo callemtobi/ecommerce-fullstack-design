@@ -33,7 +33,7 @@
         </div>
         <div class="cont col-sm-12">
             <div class="title text-center mb-4"><h1><%= pageName %></h1></div>
-            <form action="/api/user/<%= pageRoute %>" method="POST">
+            <form action="/auth/<%= pageRoute %>" method="POST">
                 <% if (pageRoute !== 'login') { %>
                 <div class="mb-3">
                     <label class="form-label">Username</label>
